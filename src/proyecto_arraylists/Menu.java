@@ -32,6 +32,16 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        BtnAgregar = new javax.swing.JButton();
+        BtnEliminar = new javax.swing.JButton();
+        BtnListar = new javax.swing.JButton();
+        BtnInfo = new javax.swing.JButton();
+        BtnModificar = new javax.swing.JButton();
+        BtnRegresarMenu = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         BtnCensurar = new javax.swing.JButton();
@@ -43,6 +53,128 @@ public class Menu extends javax.swing.JFrame {
         BtnOpcion2 = new javax.swing.JButton();
         BtnOpcion3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+
+        jPanel4.setBackground(new java.awt.Color(204, 0, 0));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_arraylists/fifa-1324440157910345831.png"))); // NOI18N
+        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+
+        BtnAgregar.setBackground(new java.awt.Color(255, 255, 255));
+        BtnAgregar.setForeground(new java.awt.Color(0, 0, 0));
+        BtnAgregar.setText("Agregar Jugador");
+        BtnAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAgregarActionPerformed(evt);
+            }
+        });
+
+        BtnEliminar.setBackground(new java.awt.Color(255, 255, 255));
+        BtnEliminar.setForeground(new java.awt.Color(0, 0, 0));
+        BtnEliminar.setText("Eliminar Jugador");
+        BtnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnEliminarActionPerformed(evt);
+            }
+        });
+
+        BtnListar.setBackground(new java.awt.Color(255, 255, 255));
+        BtnListar.setForeground(new java.awt.Color(0, 0, 0));
+        BtnListar.setText("Listar Jugadores");
+        BtnListar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnListarActionPerformed(evt);
+            }
+        });
+
+        BtnInfo.setBackground(new java.awt.Color(255, 255, 255));
+        BtnInfo.setForeground(new java.awt.Color(0, 0, 0));
+        BtnInfo.setText("Informacion Jugador");
+        BtnInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnInfoActionPerformed(evt);
+            }
+        });
+
+        BtnModificar.setBackground(new java.awt.Color(255, 255, 255));
+        BtnModificar.setForeground(new java.awt.Color(0, 0, 0));
+        BtnModificar.setText("Modificar Jugador");
+        BtnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnModificarActionPerformed(evt);
+            }
+        });
+
+        BtnRegresarMenu.setText("Salida");
+        BtnRegresarMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnRegresarMenuActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 135, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BtnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BtnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BtnListar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BtnInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BtnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(181, 181, 181))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BtnRegresarMenu)
+                .addGap(216, 216, 216))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(BtnAgregar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BtnListar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnInfo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnModificar)
+                .addGap(18, 18, 18)
+                .addComponent(BtnRegresarMenu)
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -110,7 +242,7 @@ public class Menu extends javax.swing.JFrame {
 
         BtnOpcion1.setBackground(new java.awt.Color(153, 153, 153));
         BtnOpcion1.setForeground(new java.awt.Color(255, 255, 255));
-        BtnOpcion1.setText("Opcion 1");
+        BtnOpcion1.setText("FIFA");
         BtnOpcion1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnOpcion1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BtnOpcion1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -288,20 +420,16 @@ public class Menu extends javax.swing.JFrame {
         BtnCensurar.setBackground(new Color(51, 51, 51));
     }//GEN-LAST:event_BtnCensurarMouseEntered
 
-    private void BtnOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOpcion1ActionPerformed
-      
-    }//GEN-LAST:event_BtnOpcion1ActionPerformed
-
     private void BtnOpcion1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnOpcion1MouseEntered
-       BtnOpcion1.setBackground(new Color(51, 51, 51));
+        BtnOpcion1.setBackground(new Color(51, 51, 51));
     }//GEN-LAST:event_BtnOpcion1MouseEntered
 
     private void BtnOpcion2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnOpcion2MouseEntered
-       BtnOpcion2.setBackground(new Color(51, 51, 51));
+        BtnOpcion2.setBackground(new Color(51, 51, 51));
     }//GEN-LAST:event_BtnOpcion2MouseEntered
 
     private void BtnOpcion3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnOpcion3MouseEntered
-         BtnOpcion3.setBackground(new Color(51, 51, 51));
+        BtnOpcion3.setBackground(new Color(51, 51, 51));
     }//GEN-LAST:event_BtnOpcion3MouseEntered
 
     private void BtnOpcion1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnOpcion1MouseExited
@@ -315,6 +443,119 @@ public class Menu extends javax.swing.JFrame {
     private void BtnOpcion3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnOpcion3MouseExited
         BtnOpcion3.setBackground(new Color(153, 153, 153));
     }//GEN-LAST:event_BtnOpcion3MouseExited
+
+    private void BtnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAgregarActionPerformed
+        String nom = JOptionPane.showInputDialog(null, "Ingrese el nombre del jugador: ", "Jugador ", 1);
+
+        String Ap = JOptionPane.showInputDialog(null, "Ingrese el apellido del Jugador: ", "Apellido ", 1);
+
+        String Nac = JOptionPane.showInputDialog(null, "Ingrese la fecha de Nacimiento: ", "Nacimiento ", 1);
+
+        int ed = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese edad actual: ", "Edad", 1));
+
+        int gol = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la cantidad de goles actual: ", "Goles", 1));
+        Futbol Ft = new Futbol(nom, Ap, Nac, ed, gol);
+        hola.add(Ft);
+
+    }//GEN-LAST:event_BtnAgregarActionPerformed
+
+    private void BtnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEliminarActionPerformed
+        String elim = "";
+        for (int i = 0; i < hola.size(); i++) {
+            elim += (i + 1) + "." + hola.get(i).getNombre() + " " + hola.get(i).getApellido() + "\n";
+
+        }
+        elim += "\n \nIngrese el numero que desea eliminar ";
+
+        int eliminar = Integer.parseInt(JOptionPane.showInputDialog(null, elim, "Eliminacion", 1));
+        hola.remove(eliminar - 1);
+    }//GEN-LAST:event_BtnEliminarActionPerformed
+
+    private void BtnListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnListarActionPerformed
+        String list = "";
+        for (int i = 0; i < hola.size(); i++) {
+            list += (i + 1) + "." + hola.get(i).getNombre() + " " + hola.get(i).getApellido() + "\n";
+
+        }
+        JOptionPane.showMessageDialog(null, list);
+    }//GEN-LAST:event_BtnListarActionPerformed
+
+    private void BtnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInfoActionPerformed
+        String info = "";
+        for (int i = 0; i < hola.size(); i++) {
+            info += (i + 1) + "." + hola.get(i).getNombre() + " " + hola.get(i).getApellido() + "\n";
+
+        }
+        info += "\n \nIngrese el numero que desea informacion ";
+
+        int Info = Integer.parseInt(JOptionPane.showInputDialog(null, info, "I", 1));
+        JOptionPane.showMessageDialog(null, hola.get(Info - 1));
+    }//GEN-LAST:event_BtnInfoActionPerformed
+
+    private void BtnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnModificarActionPerformed
+        String mod = "";
+        for (int i = 0; i < hola.size(); i++) {
+            mod += (i + 1) + "." + hola.get(i).getNombre() + " " + hola.get(i).getApellido() + "\n";
+
+        }
+        mod += "\n \nIngrese el numero en el que desea modificar informacion ";
+
+        int Mod = Integer.parseInt(JOptionPane.showInputDialog(null, mod, "Modificacion", 1));
+        int Canmod = 0;
+        int Index = Canmod;
+        Futbol Infor = hola.get(Index);
+
+        Canmod = Integer.parseInt(JOptionPane.showInputDialog(null, "Que desea modificar\n 1. Nombre de jugador \n 2. Apellido de jugador \n 3. Fecha de Nacimiento \n 4. Edad \n 5. Goles"));
+
+        switch (Canmod - 1) {
+            case 0: {
+                String nom;
+                nom = JOptionPane.showInputDialog(null, "Cancion Actual:  " + Infor.getNombre() + "\n Ingrese Nuevo Nombre: ");
+                Infor.setNombre(nom);
+            }
+            break;
+            case 1: {
+                String Ap;
+                Ap = JOptionPane.showInputDialog(null, "Album :  " + Infor.getApellido() + "\n Ingrese Nuevo Apellido: ");
+                Infor.setApellido(Ap);
+            }
+            break;
+            case 2: {
+                String Nac;
+                Nac = JOptionPane.showInputDialog(null, "Artista :  " + Infor.getFecha() + "\n Ingrese nueva fecha de nacimiento: ");
+                Infor.setFecha(Nac);
+            }
+            break;
+            case 3: {
+                int ed;
+                ed = Integer.parseInt(JOptionPane.showInputDialog(null, "Duracion:  " + Infor.getEdad() + "\n Ingrese edad: "));
+                Infor.setEdad(ed);
+            }
+            break;
+            case 4: {
+                int gol;
+                gol = Integer.parseInt(JOptionPane.showInputDialog(null, "Año:  " + Infor.getGoles() + "\n Ingrese cantidad de goles: "));
+                Infor.setGoles(gol);
+            }
+            break;
+
+            default: {
+                JOptionPane.showMessageDialog(null, "Opcion No Valida");
+
+            }
+            break;
+        }
+    }//GEN-LAST:event_BtnModificarActionPerformed
+
+    private void BtnOpcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOpcion1ActionPerformed
+        jFrame1.pack();
+        jFrame1.setLocationRelativeTo(this);
+        jFrame1.setVisible(true);
+    }//GEN-LAST:event_BtnOpcion1ActionPerformed
+
+    private void BtnRegresarMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegresarMenuActionPerformed
+        jFrame1.dispose();
+    }//GEN-LAST:event_BtnRegresarMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -389,7 +630,6 @@ public class Menu extends javax.swing.JFrame {
 
     public static ArrayList<String> addBannedWords() {
         char resp = 'n';
-       
 
         ArrayList<String> bannedWords = new ArrayList<>();
 
@@ -399,7 +639,7 @@ public class Menu extends javax.swing.JFrame {
             bannedWords.add(cadena);
             String respuesta = JOptionPane.showInputDialog(null, "Desea agregar otra palabra? [s/n]: ");
             resp = respuesta.charAt(0);
-            
+
         } while (resp != 'n' && resp != 'N');
 
         return bannedWords;
@@ -433,18 +673,28 @@ public class Menu extends javax.swing.JFrame {
         return msg;
     }
 
-
+    ArrayList<Futbol> hola = new ArrayList<>();
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnAgregar;
     private javax.swing.JButton BtnCensurar;
+    private javax.swing.JButton BtnEliminar;
+    private javax.swing.JButton BtnInfo;
     private javax.swing.JButton BtnInterseccion;
+    private javax.swing.JButton BtnListar;
+    private javax.swing.JButton BtnModificar;
     private javax.swing.JButton BtnOpcion1;
     private javax.swing.JButton BtnOpcion2;
     private javax.swing.JButton BtnOpcion3;
+    private javax.swing.JButton BtnRegresarMenu;
     private javax.swing.JButton BtnSalir;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }
