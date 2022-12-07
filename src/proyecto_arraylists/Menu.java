@@ -260,7 +260,7 @@ public class Menu extends javax.swing.JFrame {
 
         BtnOpcion2.setBackground(new java.awt.Color(153, 153, 153));
         BtnOpcion2.setForeground(new java.awt.Color(255, 255, 255));
-        BtnOpcion2.setText("Opcion 2");
+        BtnOpcion2.setText("Instrumentos Stock");
         BtnOpcion2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnOpcion2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BtnOpcion2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -313,7 +313,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(BtnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(BtnOpcion2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BtnOpcion3, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE))
+                    .addComponent(BtnOpcion3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(80, 80, 80))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(176, 176, 176)
@@ -371,7 +371,9 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnOpcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOpcion2ActionPerformed
-        // TODO add your handling code here:
+        Instrumentos wndow = new Instrumentos();
+        wndow.setVisible(true);
+        System.out.println("Hola");
     }//GEN-LAST:event_BtnOpcion2ActionPerformed
 
     private void BtnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSalirActionPerformed
