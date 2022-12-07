@@ -15,9 +15,8 @@ import javax.swing.JOptionPane;
  */
 public class Menu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Menu
-     */
+   
+   
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -280,7 +279,7 @@ public class Menu extends javax.swing.JFrame {
 
         BtnOpcion3.setBackground(new java.awt.Color(153, 153, 153));
         BtnOpcion3.setForeground(new java.awt.Color(255, 255, 255));
-        BtnOpcion3.setText("Opcion 3");
+        BtnOpcion3.setText("LogIn");
         BtnOpcion3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnOpcion3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BtnOpcion3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -289,6 +288,11 @@ public class Menu extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 BtnOpcion3MouseExited(evt);
+            }
+        });
+        BtnOpcion3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnOpcion3ActionPerformed(evt);
             }
         });
 
@@ -556,6 +560,12 @@ public class Menu extends javax.swing.JFrame {
     private void BtnRegresarMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegresarMenuActionPerformed
         jFrame1.dispose();
     }//GEN-LAST:event_BtnRegresarMenuActionPerformed
+
+    private void BtnOpcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOpcion3ActionPerformed
+       InterfazUsuario window = new InterfazUsuario();
+       window.setVisible(true);
+       this.setVisible(false);
+    }//GEN-LAST:event_BtnOpcion3ActionPerformed
 
     /**
      * @param args the command line arguments
